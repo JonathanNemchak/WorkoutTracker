@@ -1,0 +1,42 @@
+CREATE TABLE `indworkouts` (
+    `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+    `username` varchar(50) NOT NULL,
+    `Date` varchar(8) NOT NULL,
+    `Workout1` varchar(50) NOT NULL,
+    `Workout2` varchar(50) NOT NULL,
+    `Workout3` varchar(50) NOT NULL,
+    `Workout4` varchar(50) NOT NULL,
+    `Workout5` varchar(50) NOT NULL,
+    `Workout6` varchar(50) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+CREATE TABLE `premadeworkouts` (
+     `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+    `Bodypart` varchar(50) NOT NULL,
+    `workout1` varchar(50) NOT NULL,
+    `workout2` varchar(50) NOT NULL,
+    `workout3` varchar(50) NOT NULL,
+    `workout4` varchar(50) NOT NULL,
+    `workout5` varchar(50) NOT NULL,
+    `workout6` varchar(50) NOT NULL,
+     PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+CREATE TABLE `users2` (
+     `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+    `username` varchar(50) NOT NULL,
+    `password` varchar(50) NOT NULL,
+    `email` varchar(50) NOT NULL,
+    `age` varchar(50) NOT NULL,
+    `gender` varchar(50) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+CREATE TABLE `weight` (
+   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+    `username` varchar(50) NOT NULL,
+    `Date` varchar(8) NOT NULL,
+    `weight` varchar(50) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
